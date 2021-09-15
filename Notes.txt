@@ -1,0 +1,44 @@
+Q1 How do we run the code in out project
+
+go run nameoffile
+ 
+ 1. go build -> compiles the source code and 
+ doesn't execute it we will get main file 
+ we can execute it by ./main
+
+ 2. go run -> Compiles and executes one or two files
+ 3. go fmt -> Formats all code in each file in current dir
+ 4. go install -> compiles and installs a package
+ 5. go get -> downloads the raw source code of someone else package
+ 6. go test -> Runs any test associated iwth the project
+
+
+Q2 What does 'package main' mean
+
+package == project = common source code
+
+Two packages -> Executable (Runs the code does something)
+Reusable -> Helper the code is like dependencies but they 
+are not run  
+
+package main = executable package
+package blahblah = will not spit out any runnable file
+If a package is main then it should have a main function
+
+Q3 fmt
+
+we can import fmt or calculator which is useful for functions
+Standard library of go is fmt
+
+Q4 func() thing
+
+func nameofFunction(){
+
+}
+
+The curly braces should be declared beside func
+
+Q5 How is main structures
+package 
+import
+then func

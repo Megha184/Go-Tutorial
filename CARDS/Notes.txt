@@ -1,0 +1,33 @@
+var card string = "Ace of Spades"
+ var = we are about to create a new variable 
+ card = name of variable 
+ string = only string will be assigned to a variable
+
+ Javascript/ Ruby/ Python = dynamic type language
+ doesn't care about the type var a = 10 a = "megha"
+
+ Java/ cplus/ go = static typed 
+
+ types 
+
+ bool 
+ string
+ int 
+ float64
+
+ :=  defining a new variable
+
+ card:="Ace"
+ card = "five"
+
+ func newCard() string{
+
+ }
+
+ newCard is name and string is returning the string
+
+ Array -> Fixed length list of things
+ Slice -> AN array can grow and shrink
+
+ append(cards,"Six") doesnot modfiy the original Slice
+ but we need to initialize it to that ir diff slice
