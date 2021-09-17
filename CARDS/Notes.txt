@@ -31,3 +31,29 @@ var card string = "Ace of Spades"
 
  append(cards,"Six") doesnot modfiy the original Slice
  but we need to initialize it to that ir diff slice
+
+ Go doesnot use OOP
+
+ we can define as type deck []string
+
+
+ I need to create a deck of cards newDeck() which will have all the cards
+ One thing is make an array and insert one by one 
+ or just use two for loops by dividing the data as 
+ cardSuits which contain spades,diamond hearts and 
+ and another will be cardValues which will contain ace,two, three
+ _ = hey we know there is a variable here but we just don't care about it
+ and we don't have to use it
+
+ We can return multiple values and if we are returning multiple values then we need to store that multiple values like 2 in 2 different variable
+ here even if one variable is new we can write newvariable,oldvariable:=   (old variable :=)
+
+ value := newDeck()
+	//value.print()
+	d, value := deal(value, 5)
+
+	d.print()
+	value.print()
+
+If I am not printing d then it will show an error even in compilation or I can use _ but then it will show no new variable on left side
+to remove that just use = instead of :=
