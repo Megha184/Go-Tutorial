@@ -57,3 +57,61 @@ var card string = "Ace of Spades"
 
 If I am not printing d then it will show an error even in compilation or I can use _ but then it will show no new variable on left side
 to remove that just use = instead of :=
+
+If we are writing function as func (deck d) nameoffunc (return type)
+
+then we need to call it as d.nameof func
+
+but in case of functions as func nameofFun(deck d) (return type)
+
+we can call it using nameofFun(d)
+
+There is a strings package which we can import and is useful to manipulate strings 
+like converting strings array to just string seperated by , or space or new line
+return strings.Join(d, ",")
+
+d is of deck type for better understanding we can also write as d([]string) then pass in Join function
+Converting a string to byte means each character will be represented in its ASCII form
+
+v:=[]byte(s) // s is the string here
+
+io/ioutil package to import for file read and write
+/ represents that ioutil is under io 
+
+and it return a error 
+
+the parameter that we assign before the func name is reciever which will only be one like we used to call one object and 
+after func is parameter then return statement of function
+
+Method can have exactly one reciever
+
+We need to define type (type s string ) we cannot use string as raw in reciever 
+
+
+Random Number is generated in go using a constant seed and as we are not defining new seed 
+everytime we generate random Number
+it will be same in every case, to avoid that lets go to random package
+
+Here we see that we can define new seed but for that we need a source 
+value and to generate a type Source we need int64
+
+Before running tests on a particular module we need to initialize the module with command
+go mod init projectName
+
+I realized that for running the test I need to initialize a module but why we need to initialize
+a new module are we not getting the go/packages tree without it
+
+https://pkg.go.dev/cmd/go#hdr-Module_maintenance
+
+download    download modules to local cache
+edit        edit go.mod from tools or scripts
+graph       print module requirement graph
+init        initialize new module in current directory
+tidy        add missing and remove unused modules
+vendor      make vendored copy of dependencies
+verify      verify dependencies have expected content
+why         explain why packages or modules are needed
+
+
+For testing a particular function use func Testandcapitalfuncname(t *testing.T)
+t.ErrorF("") will have the error

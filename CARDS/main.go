@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	//var card string = "Ace of Spades"
 	//card := newCard() //figure out the type
@@ -15,14 +13,18 @@ func main() {
 	// for i, c := range cards {
 	// 	fmt.Println(i, c)
 	// }
-	value := newDeck()
+	//value := newDeck()
 	//value.print()
-	d, value := deal(value, 5)
+	//d, value := deal(value, 5)
 
-	d.print()
-	value.print()
-	v := toString(value)
-	fmt.Print(v)
+	//d.print()
+	//value.print()
+
+	//value.tosaveFile("cards_left.txt")
+
+	cards := readFromFile("cards_left.txt")
+	cards.shuffle()
+	cards.print()
 
 }
 
